@@ -1,26 +1,23 @@
-.portfolio .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-}
-
-.portfolio .box-container .box {
-  height: 20rem;
-  width: 26rem;
-  border-radius: 1rem;
-  margin: 2rem;
+.p {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
   overflow: hidden;
-  cursor: pointer;
 }
 
-.portfolio .box-container .box img {
-  height: 100%;
+.p-img {
   width: 100%;
-  object-fit: cover;
+  transition: all 10s ease;
 }
 
-.portfolio .box-container .box:hover img {
-  transform: scale(1.2);
+.p:hover .p-img {
+  transform: translateY(-100%);
+}
+@media screen and (max-width: 480px) {
+  .p {
+    width: 40%;
+    height: 20vh;
+  }
 }

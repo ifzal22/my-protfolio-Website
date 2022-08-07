@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter';
 import "../../Header.css";
 const Header = () => {
     return (
@@ -12,12 +14,23 @@ const Header = () => {
         <h3 className="name">Ifzal Hussain</h3>
                 </div>
       
-        <p className="post">MERN stack developer</p>
+        <p className="post">   {/* Style will be inherited from the parent element */}
+                            <Typewriter
+                                words={['MERN-Stack Developer!', 'Javascript Developer!', 'React-Developer!', 'Front-end Developer!']}
+                                loop={3}
+                                cursor
+                                cursorStyle='💻'
+                                typeSpeed={120}
+                                deleteSpeed={70}
+                                delaySpeed={1500}
+
+
+                            /></p>
     </div>
 
     <nav className="navbar">
         <ul>
-            <li><a href="#home">home</a></li>
+            <li><Link to='/home' href="#home">home</Link></li>
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
             <li><a href="#portfolio">portfolio</a></li>

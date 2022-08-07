@@ -48,10 +48,10 @@ const Countac = () => {
 
     <form action=" " ref={formRef} onSubmit={handleSubmit}>
 
-        <input type="text" placeholder="name" class="box" name="user_name"/>
-        <input type="email" placeholder="email" class="box"   name="user_email" />
-        <input type="text" placeholder="subject" class="box"  name="user_subject"/>
-        <textarea      name="message" id="" cols="30" rows="10" class="box message" placeholder="message" ></textarea>
+        <input required type="text" placeholder="name" class="box" name="user_name"/>
+        <input required type="email" placeholder="email" class="box"   name="user_email" />
+        <input  required type="text" placeholder="subject" class="box"  name="user_subject"/>
+        <textarea required     name="message" id="" cols="30" rows="10" class="box message" placeholder="message" ></textarea>
         <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
         {done && <h2 style={{color:'yellow',margin:'10px'}}>Thank you...</h2>}
     </form>
