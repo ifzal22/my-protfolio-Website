@@ -31,7 +31,7 @@ const Header = () => {
     <nav className="navbar">
         <ul>
             <li><Link to='/home' href="#home">home</Link></li>
-            <li><a href="#about">about</a></li>
+            <li><a href="#home">about</a></li>
             <li><a href="#education">education</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
