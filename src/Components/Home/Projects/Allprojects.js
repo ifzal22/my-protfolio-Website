@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../Header/Header';
 import './Projects.css';
 
-const Projects = () => {
+const Allprojects = () => {
   
     const [myProjects , setProject] = useState([]);
     console.log(myProjects);
     useEffect(()=>{
         fetch('./data.json')
         .then(r => r.json())
-        .then(data => setProject(data.slice(0,3)))
+        .then(data => setProject(data))
     },[])
-    return (
+    return (<><Header></Header>
         <div>
             
 <section className="portfolio" id="portfolio">
@@ -24,6 +25,7 @@ const Projects = () => {
     {
         myProjects.map(p=>
         <>
+        
             <div className="p">
 <div className="box  p-2">
 {
@@ -42,12 +44,12 @@ const Projects = () => {
          
     }
      <div className='text-center'>
-        <Link to="/Allprojects" className='btn'>More Projects <i class="fas fa-arrow-right"></i> </Link> </div>
+        <Link to="/" className='btn'>More Projects <i class="fas fa-arrow-right"></i> </Link> </div>
   
     </div>
 </section>
-        </div>
+        </div></>
     );
 };
 
-export default Projects;
+export default Allprojects;
