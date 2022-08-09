@@ -38,10 +38,10 @@ const Countac = () => {
         <h3 class="title">contact info</h3>
 
         <div class="info">
-            <h3> <i class="fas fa-envelope"></i> shaikh@gmail.com </h3>
-            <h3> <i class="fas fa-phone"></i> +123-456-7890 </h3>
-            <h3> <i class="fas fa-phone"></i> +111-222-3333 </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104. </h3>
+            <h3> <i class="fas fa-envelope"></i>ifzal.hussain1122@gmail.com </h3>
+            <h3> <i class="fas fa-phone"></i>+8801880704115</h3>
+          
+            <h3> <i class="fas fa-map-marker-alt"></i> Sylhet, Bangladesh - 3103 </h3>
         </div>
 
     </div>
