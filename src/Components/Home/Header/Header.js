@@ -1,11 +1,14 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 import "../../Header.css";
+import Manu from './HeaderMnu';
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
+            
         <header className='header'>
             
             <div className="user">
@@ -39,8 +42,18 @@ const Header = () => {
     </nav>
         </header>
         {/* <!-- header section ends --> */}
-
-        <div id="menu" class="fas fa-bars"></div></div>
+<div>
+<span style={{
+        fontSize:' 25px',
+        color: 'wheat',
+        padding:'10px'
+}} id="MANU" className="material-icons menu-btn fas fa-bars"
+        onClick={() => setIsOpen(true)}> MENEU
+        </span>
+        <Manu isOpen={isOpen} onChange={setIsOpen}></Manu>
+</div>
+      
+      </div>
     );
 };
 

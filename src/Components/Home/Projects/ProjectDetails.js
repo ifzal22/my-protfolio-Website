@@ -16,7 +16,7 @@ const ProjectDetails = () => {
     return (
     <> 
     <Header></Header>
-    <div style={{height:'1100px'}}>
+    <div style={{height:'1200px'}}>
         <div className='mt-5'>
         <h1 className="heading"> my <span>{details[about]?.name} WEB</span> WEB </h1>
            
@@ -53,6 +53,17 @@ const ProjectDetails = () => {
     <div className='mt-5'>
     <h3 style={{color:'white' , textShadow: '2px 2px 4px #000000'}}><span style={{color:'yellow',fontSize:'35px'}} className='m-3'>***Description</span>{details[about]?.about}</h3> 
     </div>
+
+
+{
+ details[about]?.email &&   
+ <div className='mt-5'>
+ <h5 style={{color:'white' , textShadow: '2px 2px 4px #000000'}}><span style={{color:'yellow',fontSize:'28px'}} className='m-3'>*Email :</span>{details[about]?.email}</h5> 
+ <h5 style={{color:'white' , textShadow: '2px 2px 4px #000000'}}><span style={{color:'yellow',fontSize:'28px'}} className='m-3'>*Password :</span>{details[about]?.password}</h5> 
+ </div>
+}
+
+
 
 
 

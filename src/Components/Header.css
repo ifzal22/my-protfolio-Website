@@ -152,7 +152,6 @@ header .navbar ul li a:hover {
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
   z-index: 1000;
-  display: none;
 }
 
 .home {
@@ -269,7 +268,9 @@ header .navbar ul li a:hover {
   z-index: 100;
   display: none;
 }
-
+#MANU {
+  display: none;
+}
 /* media queries  */
 
 @media (max-width: 1200px) {
@@ -287,10 +288,6 @@ header .navbar ul li a:hover {
     left: -120%;
   }
 
-  #menu {
-    display: block;
-  }
-
   header.toggle {
     left: 0%;
   }
@@ -303,6 +300,9 @@ header .navbar ul li a:hover {
 @media (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+  #MANU {
+    display: block;
   }
 }
 
@@ -329,5 +329,8 @@ header .navbar ul li a:hover {
 
   .contact .row form {
     margin: 3rem 0;
+  }
+  #menu {
+    display: block;
   }
 }

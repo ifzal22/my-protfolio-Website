@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../resume/IFZAL HUSSAIN  .pdf';
+import resume from '../resume/Ifzal-Hussain-RESUME.pdf';
 import './Home.css';
 const Home2 = () => {
     return (
