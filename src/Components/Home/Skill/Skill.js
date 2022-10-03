@@ -76,6 +76,38 @@ const Skill = () => {
             database.
           </p>
         </div>
+
+        <div className="CW container  ">
+          <div>
+            {" "}
+            <h3>
+              Comfortable
+              <span
+                style={{
+                  color: "white",
+                  margin: "10px",
+                  fontSize: "25px",
+                  textShadow: "rgb(157 135 41) 0px 0px 20px",
+                }}
+              >
+                with :
+              </span>
+            </h3>
+          </div>
+
+          {/* HTML5 , CSS3, BOOTSTRAP , JAVASCRIPT, ES6, REACT-JS , EXPRESS , MONGO-DB, NODE-JS */}
+          <div className="skil-BTN container-fluid">
+            <button class=" btn-light">HTML5</button>
+            <button>CSS3</button>
+            <button>BOOTSTRAP</button>
+            <button>JAVASCRIPT</button>
+            <button>ES6</button>
+            <button>REACT.JS</button>
+            <button>EXPRESS.JS</button>
+            <button>MONGO.DB</button>
+            <button>NODE.JS</button>
+          </div>
+        </div>
       </div>
     </div>
   );

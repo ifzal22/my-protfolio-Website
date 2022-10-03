@@ -27,3 +27,22 @@
   align-items: center;
   justify-content: center;
 }
+.CW h3 {
+  color: var(--yellow);
+  text-align: start;
+}
+.CW {
+  justify-content: center;
+  align-items: center;
+}
+.skil-BTN button {
+  border-radius: 10%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-size: 1.75rem;
+  color: var(--yellow);
+  background-color: #0b1920;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
